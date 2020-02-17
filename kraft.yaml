@@ -1,0 +1,25 @@
+specification: '0.4'
+
+unikraft:
+  version: '0.4'
+  kconfig:
+    - CONFIG_LIBPOSIX_SYSINFO=y
+
+architectures:
+  x86_64: true
+  
+platforms:
+  linuxu: true
+  kvm: true
+  xen: true
+  
+libraries:
+  libunwind: '0.4'
+  compiler-rt: '0.4'
+  libcxx: '0.4'
+  libcxxabi: '0.4'
+  newlib:
+    version: '0.4'
+    kconfig:
+      - CONFIG_LIBNEWLIBC=y
+
