@@ -18,8 +18,4 @@ libraries:
   compiler-rt: '0.4'
   libcxx: '0.4'
   libcxxabi: '0.4'
-  newlib:
-    version: '0.4'
-    kconfig:
-      - CONFIG_LIBNEWLIBC=y
-
+  newlib: '0.4'
