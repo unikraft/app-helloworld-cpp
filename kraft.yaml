@@ -1,7 +1,7 @@
 specification: '0.4'
 
 unikraft:
-  version: '0.4'
+  version: '0.5'
   kconfig:
     - CONFIG_LIBPOSIX_SYSINFO=y
 
@@ -14,8 +14,8 @@ platforms:
   xen: true
   
 libraries:
-  libunwind: '0.4'
-  compiler-rt: '0.4'
-  libcxx: '0.4'
-  libcxxabi: '0.4'
-  newlib: '0.4'
+  libunwind: '0.5'
+  compiler-rt: '0.5'
+  libcxx: '0.5'
+  libcxxabi: '0.5'
+  newlib: '0.5'
