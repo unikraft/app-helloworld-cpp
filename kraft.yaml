@@ -1,18 +1,16 @@
-specification: '0.4'
-
+specification: '0.5'
+name: helloworld-cpp
 unikraft:
   version: '0.5'
   kconfig:
     - CONFIG_LIBPOSIX_SYSINFO=y
-
-architectures:
-  x86_64: true
-  
-platforms:
-  linuxu: true
-  kvm: true
-  xen: true
-  
+targets:
+  - architecture: x86_64
+    platform: linuxu
+  - architecture: x86_64
+    platform: kvm
+  - architecture: x86_64
+    platform: xen
 libraries:
   libunwind: '0.5'
   compiler-rt: '0.5'
