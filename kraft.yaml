@@ -4,6 +4,11 @@ unikraft:
   version: '0.5'
   kconfig:
     - CONFIG_LIBPOSIX_SYSINFO=y
+    - CONFIG_LIBUKSIGNAL=y
+    - CONFIG_LIBNEWLIBC=y
+    - CONFIG_LIBCXXABI=y
+    - CONFIG_LIBCXX=y
+    - CONFIG_LIBUNWIND=y
 targets:
   - architecture: x86_64
     platform: linuxu
