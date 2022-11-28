@@ -25,5 +25,5 @@ libraries:
     version: stable
   libcxxabi:
     version: stable
-  newlib:
+  musl:
     version: stable
