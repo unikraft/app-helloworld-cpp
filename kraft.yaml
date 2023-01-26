@@ -6,7 +6,6 @@ unikraft:
   kconfig:
     - CONFIG_LIBPOSIX_SYSINFO=y
     - CONFIG_LIBUKSIGNAL=y
-    - CONFIG_LIBNEWLIBC=y
 targets:
   - architecture: x86_64
     platform: linuxu
@@ -17,13 +16,13 @@ targets:
   - architecture: arm64
     platform: kvm
 libraries:
-  libunwind:
+  musl:
     version: stable
-  compiler-rt:
+  libunwind:
     version: stable
   libcxx:
     version: stable
   libcxxabi:
     version: stable
-  musl:
+  compiler-rt:
     version: stable
