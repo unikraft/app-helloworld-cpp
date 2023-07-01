@@ -33,9 +33,9 @@ $ make
 ```
 
 Run the application:
-- If you built the application for `kvm`:
+- If you built the application for `qemu`:
 ```
-sudo qemu-system-x86_64 -kernel "build/app-helloworld-cpp_kvm-x86_64" \
+sudo qemu-system-x86_64 -kernel "build/app-helloworld-cpp_qemu-x86_64" \
                         -enable-kvm \
                         -nographic
 ```
