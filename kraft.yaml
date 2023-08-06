@@ -2,7 +2,7 @@
 specification: '0.5'
 name: helloworld-cpp
 unikraft:
-  version: stable
+  version: staging
   kconfig:
     - CONFIG_LIBPOSIX_SYSINFO=y
     - CONFIG_LIBUKSIGNAL=y
@@ -19,12 +19,22 @@ targets:
     platform: firecraker
 libraries:
   libcxxabi:
-    version: stable
+    version: staging
+    kconfig:
+      - CONFIG_LIBCXXABI=y
   libcxx:
-    version: stable
-  compiler-rt:
-    version: stable
+    version: staging
+    kconfig:
+      - CONFIG_LIBCXX=y
   libunwind:
-    version: stable
+    version: staging
+    kconfig:
+      - CONFIG_LIBUNWIND=y
+  compiler-rt:
+    version: staging
+    kconfig:
+      - CONFIG_LIBCOMPILER_RT=y
   musl:
-    version: stable
+    version: staging
+    kconfig:
+      - CONFIG_LIBMUSL=y
