@@ -16,7 +16,7 @@ targets:
   - architecture: arm64
     platform: qemu
   - architecture: x86_64
-    platform: firecraker
+    platform: firecracker
 libraries:
   libcxxabi:
     version: stable
