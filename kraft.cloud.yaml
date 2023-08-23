@@ -1,0 +1,35 @@
+specification: '0.5'
+name: helloworld-cpp
+unikraft:
+  version: cloud
+  kconfig:
+    - CONFIG_LIBPOSIX_SYSINFO=y
+    - CONFIG_LIBUKSIGNAL=y
+targets:
+  - name: kraftcloud-x86_64
+    architecture: x86_64
+    platform: firecracker
+libraries:
+  libcxxabi:
+    version: stable
+    kconfig:
+      - CONFIG_LIBCXXABI=y
+  libcxx:
+    version: stable
+    kconfig:
+      - CONFIG_LIBCXX=y
+  libunwind:
+    version: stable
+    kconfig:
+      - CONFIG_LIBUNWIND=y
+  compiler-rt:
+    version: stable
+    kconfig:
+      - CONFIG_LIBCOMPILER_RT=y
+  musl:
+    version: stable
+    kconfig:
+      - CONFIG_LIBMUSL=y
+  ukp-bin:
+    source: https://github.com/unikraft-io/lib-ukp-bin
+    version: stable
