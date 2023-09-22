@@ -8,15 +8,13 @@ unikraft:
     - CONFIG_LIBUKSIGNAL=y
 targets:
   - architecture: x86_64
-    platform: linuxu
-  - architecture: x86_64
     platform: qemu
-  - architecture: x86_64
-    platform: xen
   - architecture: arm64
     platform: qemu
   - architecture: x86_64
-    platform: firecracker
+    platform: fc
+  - architecture: arm64
+    platform: fc
 libraries:
   libcxxabi:
     version: stable
