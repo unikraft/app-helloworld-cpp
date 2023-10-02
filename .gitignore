@@ -1,5 +1,4 @@
 /.unikraft/
 /build/
-/.config
-/.config.old
+/.config*
 /workdir/
