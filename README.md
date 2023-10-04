@@ -430,13 +430,15 @@ sudo cp release-v1.4.0-x86_64/firecracker-v1.4.0-x86_64 /usr/local/bin/firecrack
 ```
 
 To run a unikernel image, you need to configure a JSON file.
-This is the `helloworld-cpp-fc-x86_64.json` file.
+This is the `fc-x86_64.json` file.
 Pass this file to the `firecracker-x86_64` command to run the Unikernel instance:
 
 ```console
 rm /tmp/firecracker.socket
-firecracker-x86_64 --api-sock /tmp/firecracker.socket --config-file scripts/run/fc-x86_64-helloworld-cpp.json
+firecracker-x86_64 --api-sock /tmp/firecracker.socket --config-file scripts/run/fc-x86_64.json
 ```
+
+You may be required to run the first command (`rm`) with admin rights, such as prefixing it with `sudo`.
 
 Same as running with QEMU, the application will start:
 
