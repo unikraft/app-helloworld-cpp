@@ -1,3 +1,6 @@
+**This repository is no longer maintained.
+Please visit the [application catalog](https://github.com/unikraft/catalog/tree/main/examples/helloworld-cpp)**
+
 # A "Hello, world!" C++ Application on Unikraft
 
 This application starts a C++ Helloworld application with Unikraft.
